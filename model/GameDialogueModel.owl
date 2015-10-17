@@ -234,7 +234,7 @@
                         <rdf:rest>
                             <rdf:Description>
                                 <rdf:type rdf:resource="&rdf;List"/>
-                                <rdf:first>long</rdf:first>
+                                <rdf:first>longer</rdf:first>
                                 <rdf:rest>
                                     <rdf:Description>
                                         <rdf:type rdf:resource="&rdf;List"/>
@@ -827,9 +827,9 @@
     
 
 
-    <!-- http://www.co-ode.org/ontologies/ont.owl#long -->
+    <!-- http://www.co-ode.org/ontologies/ont.owl#longer -->
 
-    <owl:Class rdf:about="&ont;long">
+    <owl:Class rdf:about="&ont;longer">
         <rdfs:subClassOf rdf:resource="&ont;PhraseCommunicationCategory"/>
     </owl:Class>
     
