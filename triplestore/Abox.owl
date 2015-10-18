@@ -1,11 +1,101 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="owlapi:ontology:ont0#"
-     xml:base="owlapi:ontology:ont0"
+<rdf:RDF xmlns="owlapi:ontology:ont1#"
+     xml:base="owlapi:ontology:ont1"
+     xmlns:AgileDoctor="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#"
+     xmlns:ont="http://www.co-ode.org/ontologies/ont.owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
-    <owl:Ontology rdf:about="owlapi:ontology:ont0"/>
+    <owl:Ontology rdf:about="owlapi:ontology:ont1"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#hasActor -->
+
+    <owl:ObjectProperty rdf:about="http://www.co-ode.org/ontologies/ont.owl#hasActor"/>
+    
+
+
+    <!-- http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#belongToDS -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#belongToDS"/>
+    
+
+
+    <!-- http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#composedByMS -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#composedByMS"/>
+    
+
+
+    <!-- http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#composedByPhrase -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#composedByPhrase"/>
+    
+
+
+    <!-- http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#includeInfo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#includeInfo"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#OWLDataProperty_8be60bbc_3fc9_4132_8f2e_cc29e44656fd -->
+
+    <owl:DatatypeProperty rdf:about="http://www.co-ode.org/ontologies/ont.owl#OWLDataProperty_8be60bbc_3fc9_4132_8f2e_cc29e44656fd"/>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#id -->
+
+    <owl:DatatypeProperty rdf:about="http://www.co-ode.org/ontologies/ont.owl#id"/>
+    
+
+
+    <!-- http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#aggressiveLevel -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#aggressiveLevel"/>
+    
+
+
+    <!-- http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#clearLevel -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#clearLevel"/>
+    
+
+
+    <!-- http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#dsStatus -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#dsStatus"/>
+    
+
+
+    <!-- http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#longLevel -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#longLevel"/>
     
 
 
@@ -20,9 +110,57 @@
     
 
 
-    <!-- http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#Child -->
+    <!-- http://www.co-ode.org/ontologies/ont.owl#DialogueSession -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#Child"/>
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#DialogueSession"/>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#DoctorActor -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#DoctorActor"/>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#MicroSequence -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#MicroSequence"/>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#PatientActor -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#PatientActor"/>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#RefinePhrase -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#RefinePhrase"/>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#TopPhrase -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#TopPhrase"/>
+    
+
+
+    <!-- http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#Scenario -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#Scenario"/>
+    
+
+
+    <!-- http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#Smoking -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#Smoking"/>
+    
+
+
+    <!-- http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#Symptom -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#Symptom"/>
     
 
 
@@ -37,11 +175,360 @@
     
 
 
-    <!-- http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#Jing -->
+    <!-- http://www.co-ode.org/ontologies/ont.owl#AskReason -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#Jing">
-        <rdf:type rdf:resource="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#Child"/>
+    <owl:NamedIndividual rdf:about="http://www.co-ode.org/ontologies/ont.owl#AskReason">
+        <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#MicroSequence"/>
     </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Bonjour -->
+
+    <owl:NamedIndividual rdf:about="http://www.co-ode.org/ontologies/ont.owl#Bonjour">
+        <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#TopPhrase"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#ExplainPrescription -->
+
+    <owl:NamedIndividual rdf:about="http://www.co-ode.org/ontologies/ont.owl#ExplainPrescription">
+        <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#MicroSequence"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#ExplainPronosis -->
+
+    <owl:NamedIndividual rdf:about="http://www.co-ode.org/ontologies/ont.owl#ExplainPronosis">
+        <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#MicroSequence"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#FixNextInterview -->
+
+    <owl:NamedIndividual rdf:about="http://www.co-ode.org/ontologies/ont.owl#FixNextInterview">
+        <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#MicroSequence"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#GeneralTalk -->
+
+    <owl:NamedIndividual rdf:about="http://www.co-ode.org/ontologies/ont.owl#GeneralTalk">
+        <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#MicroSequence"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#GiveDiagnosis -->
+
+    <owl:NamedIndividual rdf:about="http://www.co-ode.org/ontologies/ont.owl#GiveDiagnosis">
+        <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#MicroSequence"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#GivePrognosis -->
+
+    <owl:NamedIndividual rdf:about="http://www.co-ode.org/ontologies/ont.owl#GivePrognosis">
+        <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#MicroSequence"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#GiveTreatmentPlan -->
+
+    <owl:NamedIndividual rdf:about="http://www.co-ode.org/ontologies/ont.owl#GiveTreatmentPlan">
+        <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#MicroSequence"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#HistoryTaking -->
+
+    <owl:NamedIndividual rdf:about="http://www.co-ode.org/ontologies/ont.owl#HistoryTaking">
+        <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#MicroSequence"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#InviteToPhysicExam -->
+
+    <owl:NamedIndividual rdf:about="http://www.co-ode.org/ontologies/ont.owl#InviteToPhysicExam">
+        <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#MicroSequence"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#InviteToReSettle -->
+
+    <owl:NamedIndividual rdf:about="http://www.co-ode.org/ontologies/ont.owl#InviteToReSettle">
+        <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#MicroSequence"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#OWLNamedIndividual_4552428d_4d8b_4eea_84a7_4120d206f02a -->
+
+    <owl:NamedIndividual rdf:about="http://www.co-ode.org/ontologies/ont.owl#OWLNamedIndividual_4552428d_4d8b_4eea_84a7_4120d206f02a">
+        <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#MicroSequence"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#OWLNamedIndividual_6055d5b7_761c_4e2e_aaf6_46d6473ff575 -->
+
+    <owl:NamedIndividual rdf:about="http://www.co-ode.org/ontologies/ont.owl#OWLNamedIndividual_6055d5b7_761c_4e2e_aaf6_46d6473ff575">
+        <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#MicroSequence"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#QuestionningDuringExam -->
+
+    <owl:NamedIndividual rdf:about="http://www.co-ode.org/ontologies/ont.owl#QuestionningDuringExam">
+        <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#MicroSequence"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#VerifyUnderstandingOfPrescription -->
+
+    <owl:NamedIndividual rdf:about="http://www.co-ode.org/ontologies/ont.owl#VerifyUnderstandingOfPrescription">
+        <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#MicroSequence"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Welcome -->
+
+    <owl:NamedIndividual rdf:about="http://www.co-ode.org/ontologies/ont.owl#Welcome">
+        <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#MicroSequence"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#Cathy -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#Cathy">
+        <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#PatientActor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#Dupont -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#Dupont">
+        <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#DoctorActor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#Fatigue -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#Fatigue">
+        <rdf:type rdf:resource="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#Symptom"/>
+        <ont:OWLDataProperty_8be60bbc_3fc9_4132_8f2e_cc29e44656fd rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Always feels tied.</ont:OWLDataProperty_8be60bbc_3fc9_4132_8f2e_cc29e44656fd>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#GiveHealthAdvice -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#GiveHealthAdvice">
+        <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#MicroSequence"/>
+        <AgileDoctor:composedByMS rdf:resource="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#query_smoking_normal"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#Legache -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#Legache">
+        <rdf:type rdf:resource="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#Symptom"/>
+        <ont:OWLDataProperty_8be60bbc_3fc9_4132_8f2e_cc29e44656fd rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Leg hurts when climb stepways</ont:OWLDataProperty_8be60bbc_3fc9_4132_8f2e_cc29e44656fd>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#Payment -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#Payment">
+        <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#MicroSequence"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#Toto -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#Toto">
+        <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#PatientActor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#Vidal -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#Vidal">
+        <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#DoctorActor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#dPh1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#dPh1">
+        <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#TopPhrase"/>
+        <ont:OWLDataProperty_8be60bbc_3fc9_4132_8f2e_cc29e44656fd rdf:datatype="http://www.w3.org/2001/XMLSchema#string">And the smoking?</ont:OWLDataProperty_8be60bbc_3fc9_4132_8f2e_cc29e44656fd>
+        <AgileDoctor:clearLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">clear</AgileDoctor:clearLevel>
+        <AgileDoctor:aggressiveLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">neutral</AgileDoctor:aggressiveLevel>
+        <AgileDoctor:longLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">normal</AgileDoctor:longLevel>
+        <ont:hasActor rdf:resource="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#Vidal"/>
+        <AgileDoctor:belongToDS rdf:resource="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#query_smoking_normal"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#dPh2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#dPh2">
+        <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#RefinePhrase"/>
+        <ont:OWLDataProperty_8be60bbc_3fc9_4132_8f2e_cc29e44656fd rdf:datatype="http://www.w3.org/2001/XMLSchema#string">How many? 1 pack a day? 2 pack a aday?</ont:OWLDataProperty_8be60bbc_3fc9_4132_8f2e_cc29e44656fd>
+        <ont:hasActor rdf:resource="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#Vidal"/>
+        <AgileDoctor:belongToDS rdf:resource="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#query_smoking_normal"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#dph11 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#dph11">
+        <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#TopPhrase"/>
+        <ont:OWLDataProperty_8be60bbc_3fc9_4132_8f2e_cc29e44656fd rdf:datatype="http://www.w3.org/2001/XMLSchema#string">So what else do you have?</ont:OWLDataProperty_8be60bbc_3fc9_4132_8f2e_cc29e44656fd>
+        <ont:hasActor rdf:resource="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#Vidal"/>
+        <AgileDoctor:belongToDS rdf:resource="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#query_symptom_fatigue"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#pPh1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#pPh1">
+        <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#TopPhrase"/>
+        <ont:OWLDataProperty_8be60bbc_3fc9_4132_8f2e_cc29e44656fd rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oh, not much</ont:OWLDataProperty_8be60bbc_3fc9_4132_8f2e_cc29e44656fd>
+        <AgileDoctor:clearLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">unclear</AgileDoctor:clearLevel>
+        <ont:hasActor rdf:resource="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#Toto"/>
+        <AgileDoctor:belongToDS rdf:resource="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#query_smoking_normal"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#pPh11 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#pPh11">
+        <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#TopPhrase"/>
+        <ont:OWLDataProperty_8be60bbc_3fc9_4132_8f2e_cc29e44656fd rdf:datatype="http://www.w3.org/2001/XMLSchema#string">I have nothing to say.</ont:OWLDataProperty_8be60bbc_3fc9_4132_8f2e_cc29e44656fd>
+        <ont:hasActor rdf:resource="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#Toto"/>
+        <AgileDoctor:belongToDS rdf:resource="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#query_symptom_fatigue"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#pPh2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#pPh2">
+        <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#RefinePhrase"/>
+        <AgileDoctor:clearLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">clear</AgileDoctor:clearLevel>
+        <AgileDoctor:dsStatus rdf:datatype="http://www.w3.org/2001/XMLSchema#string">normal</AgileDoctor:dsStatus>
+        <ont:OWLDataProperty_8be60bbc_3fc9_4132_8f2e_cc29e44656fd rdf:datatype="http://www.w3.org/2001/XMLSchema#string">well, I don&apos;t know, maybe 3 packs a day.</ont:OWLDataProperty_8be60bbc_3fc9_4132_8f2e_cc29e44656fd>
+        <ont:hasActor rdf:resource="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#Toto"/>
+        <AgileDoctor:belongToDS rdf:resource="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#query_smoking_normal"/>
+        <AgileDoctor:includeInfo rdf:resource="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#smokingInfo1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#query_smoking_normal -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#query_smoking_normal">
+        <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#DialogueSession"/>
+        <AgileDoctor:dsStatus>normal</AgileDoctor:dsStatus>
+        <AgileDoctor:composedByPhrase rdf:resource="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#dPh1"/>
+        <AgileDoctor:composedByPhrase rdf:resource="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#dPh2"/>
+        <AgileDoctor:composedByPhrase rdf:resource="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#pPh1"/>
+        <AgileDoctor:composedByPhrase rdf:resource="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#pPh2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#query_symptom_fatigue -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#query_symptom_fatigue">
+        <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#DialogueSession"/>
+        <AgileDoctor:dsStatus rdf:datatype="http://www.w3.org/2001/XMLSchema#string">refuse</AgileDoctor:dsStatus>
+        <AgileDoctor:composedByPhrase rdf:resource="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#dph11"/>
+        <AgileDoctor:composedByPhrase rdf:resource="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#pPh11"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#scenario1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#scenario1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#Scenario"/>
+        <ont:id rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</ont:id>
+        <AgileDoctor:composedByMS rdf:resource="http://www.co-ode.org/ontologies/ont.owl#HistoryTaking"/>
+        <AgileDoctor:includeInfo rdf:resource="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#Fatigue"/>
+        <AgileDoctor:composedByMS rdf:resource="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#GiveHealthAdvice"/>
+        <AgileDoctor:includeInfo rdf:resource="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#Legache"/>
+        <AgileDoctor:includeInfo rdf:resource="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#smokingInfo1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#smokingInfo1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#smokingInfo1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#Smoking"/>
+        <ont:OWLDataProperty_8be60bbc_3fc9_4132_8f2e_cc29e44656fd rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Heavy smoker, 3 packs per day</ont:OWLDataProperty_8be60bbc_3fc9_4132_8f2e_cc29e44656fd>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.co-ode.org/ontologies/ont.owl#AskReason"/>
+            <rdf:Description rdf:about="http://www.co-ode.org/ontologies/ont.owl#ExplainPrescription"/>
+            <rdf:Description rdf:about="http://www.co-ode.org/ontologies/ont.owl#ExplainPronosis"/>
+            <rdf:Description rdf:about="http://www.co-ode.org/ontologies/ont.owl#FixNextInterview"/>
+            <rdf:Description rdf:about="http://www.co-ode.org/ontologies/ont.owl#GeneralTalk"/>
+            <rdf:Description rdf:about="http://www.co-ode.org/ontologies/ont.owl#GiveDiagnosis"/>
+            <rdf:Description rdf:about="http://www.co-ode.org/ontologies/ont.owl#GivePrognosis"/>
+            <rdf:Description rdf:about="http://www.co-ode.org/ontologies/ont.owl#GiveTreatmentPlan"/>
+            <rdf:Description rdf:about="http://www.co-ode.org/ontologies/ont.owl#HistoryTaking"/>
+            <rdf:Description rdf:about="http://www.co-ode.org/ontologies/ont.owl#InviteToPhysicExam"/>
+            <rdf:Description rdf:about="http://www.co-ode.org/ontologies/ont.owl#InviteToReSettle"/>
+            <rdf:Description rdf:about="http://www.co-ode.org/ontologies/ont.owl#OWLNamedIndividual_4552428d_4d8b_4eea_84a7_4120d206f02a"/>
+            <rdf:Description rdf:about="http://www.co-ode.org/ontologies/ont.owl#OWLNamedIndividual_6055d5b7_761c_4e2e_aaf6_46d6473ff575"/>
+            <rdf:Description rdf:about="http://www.co-ode.org/ontologies/ont.owl#QuestionningDuringExam"/>
+            <rdf:Description rdf:about="http://www.co-ode.org/ontologies/ont.owl#VerifyUnderstandingOfPrescription"/>
+            <rdf:Description rdf:about="http://www.co-ode.org/ontologies/ont.owl#Welcome"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#GiveHealthAdvice"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#Payment"/>
+        </owl:distinctMembers>
+    </rdf:Description>
 </rdf:RDF>
 
 

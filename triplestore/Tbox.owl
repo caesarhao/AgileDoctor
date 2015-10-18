@@ -1,11 +1,239 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="owlapi:ontology:ont1#"
-     xml:base="owlapi:ontology:ont1"
+<rdf:RDF xmlns="owlapi:ontology:ont0#"
+     xml:base="owlapi:ontology:ont0"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
-    <owl:Ontology rdf:about="owlapi:ontology:ont1"/>
+    <owl:Ontology rdf:about="owlapi:ontology:ont0"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#hasActor -->
+
+    <owl:ObjectProperty rdf:about="http://www.co-ode.org/ontologies/ont.owl#hasActor">
+        <rdfs:domain rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Phrase"/>
+        <rdfs:range rdf:resource="http://www.co-ode.org/ontologies/ont.owl#PhraseActor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#accomanyAction -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#accomanyAction">
+        <rdfs:domain rdf:resource="http://www.co-ode.org/ontologies/ont.owl#DialogueSession"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#Action"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#belongToDS -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#belongToDS">
+        <rdfs:range rdf:resource="http://www.co-ode.org/ontologies/ont.owl#DialogueSession"/>
+        <rdfs:domain rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Phrase"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#composedByPhrase"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#composedByDS -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#composedByDS">
+        <rdfs:range rdf:resource="http://www.co-ode.org/ontologies/ont.owl#DialogueSession"/>
+        <rdfs:domain rdf:resource="http://www.co-ode.org/ontologies/ont.owl#MicroSequence"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#composedByMS -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#composedByMS">
+        <rdfs:range rdf:resource="http://www.co-ode.org/ontologies/ont.owl#MicroSequence"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#Scenario"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#composedByPhrase -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#composedByPhrase">
+        <rdfs:domain rdf:resource="http://www.co-ode.org/ontologies/ont.owl#DialogueSession"/>
+        <rdfs:range rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Phrase"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#includeInfo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#includeInfo">
+        <rdfs:domain rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Phrase"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#Information"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#Scenario"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#OWLDataProperty_8be60bbc_3fc9_4132_8f2e_cc29e44656fd -->
+
+    <owl:DatatypeProperty rdf:about="http://www.co-ode.org/ontologies/ont.owl#OWLDataProperty_8be60bbc_3fc9_4132_8f2e_cc29e44656fd">
+        <rdfs:domain rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Phrase"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#id -->
+
+    <owl:DatatypeProperty rdf:about="http://www.co-ode.org/ontologies/ont.owl#id">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#aggressiveLevel -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#aggressiveLevel">
+        <rdfs:domain rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Phrase"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:oneOf>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                        <rdf:first>aggressive</rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first>neutral</rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first>polite</rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </owl:oneOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#clearLevel -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#clearLevel">
+        <rdfs:domain rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Phrase"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:oneOf>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                        <rdf:first>clear</rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first>unclear</rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </owl:oneOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#dsStatus -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#dsStatus">
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:oneOf>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                        <rdf:first>dontUnderstand</rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first>normal</rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first>questionning</rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first>refuse</rdf:first>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </owl:oneOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#longLevel -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#longLevel">
+        <rdfs:domain rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Phrase"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:oneOf>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                        <rdf:first>concise</rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first>longer</rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first>normal</rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </owl:oneOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+    </owl:DatatypeProperty>
     
 
 
@@ -20,312 +248,737 @@
     
 
 
-    <!-- http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#Adolescent -->
+    <!-- http://www.co-ode.org/ontologies/ont.owl#AskForExplication -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#Adolescent">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#Patient"/>
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#AskForExplication">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#MicroSequence"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#Adult -->
+    <!-- http://www.co-ode.org/ontologies/ont.owl#AskForMedicalHistoryForm -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#Adult">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#Patient"/>
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#AskForMedicalHistoryForm">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#MicroSequence"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#Aggressive_Phrase -->
+    <!-- http://www.co-ode.org/ontologies/ont.owl#AskForPayment -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#Aggressive_Phrase">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#PhraseChacter"/>
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#AskForPayment">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#MicroSequence"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#Agree -->
+    <!-- http://www.co-ode.org/ontologies/ont.owl#ChildType -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#Agree">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#Answer_Without_Information"/>
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#ChildType">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#PhraseStyleType"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#Answer -->
+    <!-- http://www.co-ode.org/ontologies/ont.owl#CloseQuestion -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#Answer">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#Phrase_Primitive_Type"/>
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#CloseQuestion">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Question"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#Answer_With_Information -->
+    <!-- http://www.co-ode.org/ontologies/ont.owl#ConfirmTheUnderstanding -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#Answer_With_Information">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#Answer"/>
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#ConfirmTheUnderstanding">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#MicroSequence"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#Answer_Without_Information -->
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Consent -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#Answer_Without_Information">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#Answer"/>
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#Consent">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Reply"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#Child -->
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Declaration -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#Child">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#Patient"/>
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#Declaration">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#PhraseType"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#Clear_Phrase -->
+    <!-- http://www.co-ode.org/ontologies/ont.owl#DialogueSession -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#Clear_Phrase">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#PhraseChacter"/>
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#DialogueSession"/>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Disagree -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#Disagree">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Reply"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#Confirmation -->
+    <!-- http://www.co-ode.org/ontologies/ont.owl#DoctorActor -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#Confirmation">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#Answer_Without_Information"/>
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#DoctorActor">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#PhraseActor"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#Disagree -->
+    <!-- http://www.co-ode.org/ontologies/ont.owl#DontUnderstand -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#Disagree">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#Answer_Without_Information"/>
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#DontUnderstand">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Reply"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#Doctor -->
+    <!-- http://www.co-ode.org/ontologies/ont.owl#EndTheSession -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#Doctor">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#Participant"/>
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#EndTheSession">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#MicroSequence"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#Dont_Understand -->
+    <!-- http://www.co-ode.org/ontologies/ont.owl#FixNextSession -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#Dont_Understand">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#Answer_Without_Information"/>
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#FixNextSession">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#MicroSequence"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#Enfant -->
+    <!-- http://www.co-ode.org/ontologies/ont.owl#ForeignerType -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#Enfant">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#Patient"/>
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#ForeignerType">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#PhraseStyleType"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#Family_member -->
+    <!-- http://www.co-ode.org/ontologies/ont.owl#GestureDuringExam -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#Family_member">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#Participant"/>
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#GestureDuringExam">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#MicroSequence"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#Gesture -->
+    <!-- http://www.co-ode.org/ontologies/ont.owl#GestureToEndExam -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#Gesture">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#Phrase"/>
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#GestureToEndExam">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#MicroSequence"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#Intern_student -->
+    <!-- http://www.co-ode.org/ontologies/ont.owl#GetAgeInfo -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#Intern_student">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#Participant"/>
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#GetAgeInfo">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#MicroSequence"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#Long_Phrase -->
+    <!-- http://www.co-ode.org/ontologies/ont.owl#GetChonicTreatement -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#Long_Phrase">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#PhraseChacter"/>
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#GetChonicTreatement">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#MicroSequence"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#Participant -->
+    <!-- http://www.co-ode.org/ontologies/ont.owl#GetFamilyIllnessHistory -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#Participant"/>
-    
-
-
-    <!-- http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#Patient -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#Patient">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#Participant"/>
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#GetFamilyIllnessHistory">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#MicroSequence"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#Phrase -->
+    <!-- http://www.co-ode.org/ontologies/ont.owl#GetFamilyInfo -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#Phrase"/>
-    
-
-
-    <!-- http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#PhraseChacter -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#PhraseChacter"/>
-    
-
-
-    <!-- http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#Phrase_Primitive_Type -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#Phrase_Primitive_Type"/>
-    
-
-
-    <!-- http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#Question -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#Question">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#Phrase_Primitive_Type"/>
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#GetFamilyInfo">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#MicroSequence"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#Reason_of_Coming -->
+    <!-- http://www.co-ode.org/ontologies/ont.owl#GetJobInfo -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#Reason_of_Coming"/>
-    
-
-
-    <!-- http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#Request -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#Request">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#Phrase_Primitive_Type"/>
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#GetJobInfo">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#MicroSequence"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#Statement -->
+    <!-- http://www.co-ode.org/ontologies/ont.owl#GetLastPrescription -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#Statement">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#Phrase_Primitive_Type"/>
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#GetLastPrescription">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#MicroSequence"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#To_do_something -->
+    <!-- http://www.co-ode.org/ontologies/ont.owl#GetNameInfo -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#To_do_something">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#Request"/>
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#GetNameInfo">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#MicroSequence"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#To_express_self -->
+    <!-- http://www.co-ode.org/ontologies/ont.owl#GetPastIllnessHistory -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#To_express_self">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#Request"/>
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#GetPastIllnessHistory">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#MicroSequence"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#Understanding -->
+    <!-- http://www.co-ode.org/ontologies/ont.owl#GetPastSurgeryHistory -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#Understanding">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#Statement"/>
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#GetPastSurgeryHistory">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#MicroSequence"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#Utterance -->
+    <!-- http://www.co-ode.org/ontologies/ont.owl#GetSessionReasonInfo -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#Utterance">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#Phrase"/>
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#GetSessionReasonInfo">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#MicroSequence"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#ask_for_health_certification -->
+    <!-- http://www.co-ode.org/ontologies/ont.owl#GetSymptom -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#ask_for_health_certification">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#Reason_of_Coming"/>
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#GetSymptom">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#MicroSequence"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#regular_check -->
+    <!-- http://www.co-ode.org/ontologies/ont.owl#GetSymptomDetail -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#regular_check">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#second_visit"/>
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#GetSymptomDetail">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#MicroSequence"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#renew_the_prescription -->
+    <!-- http://www.co-ode.org/ontologies/ont.owl#GiveDiagnostic -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#renew_the_prescription">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#second_visit"/>
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#GiveDiagnostic">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#MicroSequence"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#second_visit -->
+    <!-- http://www.co-ode.org/ontologies/ont.owl#GiveExplication -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#second_visit">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#Reason_of_Coming"/>
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#GiveExplication">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#MicroSequence"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#seek_for_a_cure -->
+    <!-- http://www.co-ode.org/ontologies/ont.owl#GiveExplicationOfPrescription -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#seek_for_a_cure">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#Reason_of_Coming"/>
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#GiveExplicationOfPrescription">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#MicroSequence"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#seek_for_answer -->
+    <!-- http://www.co-ode.org/ontologies/ont.owl#GiveHealthAdvise -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#seek_for_answer">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#Reason_of_Coming"/>
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#GiveHealthAdvise">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#MicroSequence"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#sports -->
+    <!-- http://www.co-ode.org/ontologies/ont.owl#GivePronostic -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#sports">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#ask_for_health_certification"/>
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#GivePronostic">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#MicroSequence"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#test_report -->
+    <!-- http://www.co-ode.org/ontologies/ont.owl#GiveTreatementPlan -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#test_report">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#second_visit"/>
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#GiveTreatementPlan">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#MicroSequence"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#work -->
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Goodbye -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#work">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#ask_for_health_certification"/>
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#Goodbye">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#MicroSequence"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#InitiatingSession -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#InitiatingSession">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#MicroSequence"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#InviteToExam -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#InviteToExam">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#MicroSequence"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#MedicalRelated -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#MedicalRelated">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#PhraseNature"/>
+        <owl:disjointWith rdf:resource="http://www.co-ode.org/ontologies/ont.owl#NonMedicalRelated"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#MicroSequence -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#MicroSequence"/>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#NonMedicalRelated -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#NonMedicalRelated">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#PhraseNature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#OpenQuestion -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#OpenQuestion">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Question"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#PatientActor -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#PatientActor">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#PhraseActor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#PatientCharactor -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#PatientCharactor"/>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Phrase -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#Phrase">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.co-ode.org/ontologies/ont.owl#hasActor"/>
+                <owl:allValuesFrom rdf:resource="http://www.co-ode.org/ontologies/ont.owl#PhraseActor"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#PhraseActor -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#PhraseActor"/>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#PhraseCommunicationCategory -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#PhraseCommunicationCategory"/>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#PhraseNature -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#PhraseNature"/>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#PhraseStyleType -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#PhraseStyleType"/>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#PhraseType -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#PhraseType"/>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Question -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#Question">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#PhraseType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#QuestioningDuringExam -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#QuestioningDuringExam">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#MicroSequence"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#RefinePhrase -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#RefinePhrase">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Phrase"/>
+        <owl:disjointWith rdf:resource="http://www.co-ode.org/ontologies/ont.owl#TopPhrase"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Reply -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#Reply">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#PhraseType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#ReplyWithInfo -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#ReplyWithInfo">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Reply"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#TalkAboutDrinking -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#TalkAboutDrinking">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#MicroSequence"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#TalkAboutExercise -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#TalkAboutExercise">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#MicroSequence"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#TalkAboutSmoking -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#TalkAboutSmoking">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#MicroSequence"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#TopPhrase -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#TopPhrase">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.co-ode.org/ontologies/ont.owl#id"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Phrase"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#VulgaireType -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#VulgaireType">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#PhraseStyleType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#WriteMedicalRecord -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#WriteMedicalRecord">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#MicroSequence"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#WritePrescription -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#WritePrescription">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#MicroSequence"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#agressive -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#agressive">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#PhraseCommunicationCategory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#agressiveCharactor -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#agressiveCharactor">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#PatientCharactor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#childCharactor -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#childCharactor">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#PatientCharactor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#clear -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#clear">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#PhraseCommunicationCategory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#digressiveCharactor -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#digressiveCharactor">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#PatientCharactor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#empathetic -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#empathetic">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#PhraseCommunicationCategory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#evasiveCharactor -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#evasiveCharactor">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#PatientCharactor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#informativeCharactor -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#informativeCharactor">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#PatientCharactor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#longer -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#longer">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#PhraseCommunicationCategory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#polite -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#polite">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#PhraseCommunicationCategory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#Action -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#Action"/>
+    
+
+
+    <!-- http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#ConductExamination -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#ConductExamination">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#DoctorAction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#DoctorAction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#DoctorAction">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#Action"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#Drinking -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#Drinking">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#LifeStyle"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#Exercising -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#Exercising">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#LifeStyle"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#Information -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#Information"/>
+    
+
+
+    <!-- http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#InputDocument -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#InputDocument">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#DoctorAction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#Interview -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#Interview">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#DoctorAction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#LifeStyle -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#LifeStyle">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#MedicalRelatedPatientInformation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#MedicalHistory -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#MedicalHistory">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#MedicalRelatedPatientInformation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#MedicalRelatedPatientInformation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#MedicalRelatedPatientInformation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#PatientInformation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#Observer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#Observer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#DoctorAction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#OutputDocument -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#OutputDocument">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#DoctorAction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#PatientInformation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#PatientInformation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#Information"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#PhychologicalHealth -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#PhychologicalHealth">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#LifeStyle"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#ReadDocument -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#ReadDocument">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#DoctorAction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#Scenario -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#Scenario"/>
+    
+
+
+    <!-- http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#SessionInformation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#SessionInformation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#Information"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#Smoking -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#Smoking">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#LifeStyle"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#Symptom -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#Symptom">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#MedicalRelatedPatientInformation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#TakePhoneCall -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#TakePhoneCall">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#DoctorAction"/>
     </owl:Class>
 </rdf:RDF>
 

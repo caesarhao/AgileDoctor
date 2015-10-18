@@ -6,6 +6,54 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
     <owl:Ontology rdf:about="owlapi:ontology:ont2"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#aggressiveLevel -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#aggressiveLevel"/>
+    
+
+
+    <!-- http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#clearLevel -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#clearLevel"/>
+    
+
+
+    <!-- http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#longLevel -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#longLevel"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointProperties"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#aggressiveLevel"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#clearLevel"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#longLevel"/>
+        </owl:members>
+    </rdf:Description>
 </rdf:RDF>
 
 

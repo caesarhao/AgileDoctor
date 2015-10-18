@@ -12,7 +12,11 @@ import org.semanticweb.owlapi.model.OWLOntologyStorageException;
 import org.semanticweb.owlapi.reasoner.OWLReasoner;
 import org.semanticweb.owlapi.util.OWLOntologyMerger;
 
+import de.derivo.sparqldlapi.Query;
 import de.derivo.sparqldlapi.QueryEngine;
+import de.derivo.sparqldlapi.QueryResult;
+import de.derivo.sparqldlapi.exceptions.QueryParserException;
+import de.derivo.sparqldlapi.exceptions.QueryEngineException;
 import model.MyFactory;
 
 public class TripleStore {
@@ -33,8 +37,8 @@ public class TripleStore {
 		// Create the manager
 		manager = OWLManager.createOWLOntologyManager();
 	}
-	
-	public TripleStore(String strFileName){
+
+	public TripleStore(String strFileName) {
 		this();
 		createOntologyFromRDF(strFileName);
 	}
@@ -136,6 +140,23 @@ public class TripleStore {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+	}
+
+	public QueryResult query(String strQuery) {
+		Query q = null;
+		QueryResult result = null;
+		try {
+			q = Query.create(strQuery);
+		} catch (QueryParserException e) {
+			e.printStackTrace();
+		}
+		try {
+			result = qengine.execute(q);
+		} catch (QueryEngineException e) {
+			e.printStackTrace();
+		}
+
+		return result;
 	}
 
 }
