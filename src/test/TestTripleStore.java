@@ -30,7 +30,9 @@ public class TestTripleStore implements ITestCase {
 		//System.out.println(tstore.query("SELECT ?a ?b  WHERE { DirectSubClassOf(?a, ?b) }").toString());
 		//System.out.println(tstore.query("SELECT ?a ?b ?c  WHERE { PropertyValue(?a, ?b, ?c) }").toString());
 		//System.out.println(tstore.query("SELECT ?a ?b  WHERE { ComplementOf(?a, ?b) }").toString());
-		System.out.println(tstore.query("SELECT ?a ?b ?c  WHERE { Annotation(?a, ?b, ?c) }").toString());
+		//System.out.println(tstore.query("SELECT ?a ?b ?c  WHERE { Annotation(?a, ?b, ?c) }").toString());
+		System.out.println(tstore.query("PREFIX ont: <http://www.co-ode.org/ontologies/ont.owl#>"
+					+ " SELECT ?ms WHERE { Type(?ms, ont:MicroSequence) }").toString());
 		return true;
 	}
 

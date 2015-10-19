@@ -248,6 +248,14 @@
     
 
 
+    <!-- http://www.co-ode.org/ontologies/ont.owl#AgressiveCharactor -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#AgressiveCharactor">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#PatientCharactor"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.co-ode.org/ontologies/ont.owl#AskForExplication -->
 
     <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#AskForExplication">
@@ -268,6 +276,14 @@
 
     <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#AskForPayment">
         <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#MicroSequence"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#ChildCharactor -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#ChildCharactor">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#PatientCharactor"/>
     </owl:Class>
     
 
@@ -318,6 +334,14 @@
     
 
 
+    <!-- http://www.co-ode.org/ontologies/ont.owl#DigressiveCharactor -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#DigressiveCharactor">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#PatientCharactor"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.co-ode.org/ontologies/ont.owl#Disagree -->
 
     <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#Disagree">
@@ -346,6 +370,14 @@
 
     <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#EndTheSession">
         <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#MicroSequence"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#EvasiveCharactor -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#EvasiveCharactor">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#PatientCharactor"/>
     </owl:Class>
     
 
@@ -530,6 +562,14 @@
 
     <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#Goodbye">
         <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#MicroSequence"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#InformativeCharactor -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#InformativeCharactor">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#PatientCharactor"/>
     </owl:Class>
     
 
@@ -749,22 +789,6 @@
     
 
 
-    <!-- http://www.co-ode.org/ontologies/ont.owl#agressiveCharactor -->
-
-    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#agressiveCharactor">
-        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#PatientCharactor"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.co-ode.org/ontologies/ont.owl#childCharactor -->
-
-    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#childCharactor">
-        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#PatientCharactor"/>
-    </owl:Class>
-    
-
-
     <!-- http://www.co-ode.org/ontologies/ont.owl#clear -->
 
     <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#clear">
@@ -773,34 +797,10 @@
     
 
 
-    <!-- http://www.co-ode.org/ontologies/ont.owl#digressiveCharactor -->
-
-    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#digressiveCharactor">
-        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#PatientCharactor"/>
-    </owl:Class>
-    
-
-
     <!-- http://www.co-ode.org/ontologies/ont.owl#empathetic -->
 
     <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#empathetic">
         <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#PhraseCommunicationCategory"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.co-ode.org/ontologies/ont.owl#evasiveCharactor -->
-
-    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#evasiveCharactor">
-        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#PatientCharactor"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.co-ode.org/ontologies/ont.owl#informativeCharactor -->
-
-    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#informativeCharactor">
-        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#PatientCharactor"/>
     </owl:Class>
     
 

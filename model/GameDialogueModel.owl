@@ -43,9 +43,9 @@
     
 
 
-    <!-- http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#accomanyAction -->
+    <!-- http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#accompanyAction -->
 
-    <owl:ObjectProperty rdf:about="&AgileDoctor;accomanyAction">
+    <owl:ObjectProperty rdf:about="&AgileDoctor;accompanyAction">
         <rdfs:domain rdf:resource="&ont;DialogueSession"/>
         <rdfs:range rdf:resource="&AgileDoctor;Action"/>
     </owl:ObjectProperty>
@@ -263,6 +263,15 @@
     
 
 
+    <!-- http://www.co-ode.org/ontologies/ont.owl#AgressiveCharactor -->
+
+    <owl:Class rdf:about="&ont;AgressiveCharactor">
+        <rdfs:subClassOf rdf:resource="&ont;PatientCharactor"/>
+        <rdfs:comment>more chance to say impolite and agressive phrases</rdfs:comment>
+    </owl:Class>
+    
+
+
     <!-- http://www.co-ode.org/ontologies/ont.owl#AskForExplication -->
 
     <owl:Class rdf:about="&ont;AskForExplication">
@@ -283,6 +292,14 @@
 
     <owl:Class rdf:about="&ont;AskForPayment">
         <rdfs:subClassOf rdf:resource="&ont;MicroSequence"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#ChildCharactor -->
+
+    <owl:Class rdf:about="&ont;ChildCharactor">
+        <rdfs:subClassOf rdf:resource="&ont;PatientCharactor"/>
     </owl:Class>
     
 
@@ -333,6 +350,15 @@
     
 
 
+    <!-- http://www.co-ode.org/ontologies/ont.owl#DigressiveCharactor -->
+
+    <owl:Class rdf:about="&ont;DigressiveCharactor">
+        <rdfs:subClassOf rdf:resource="&ont;PatientCharactor"/>
+        <rdfs:comment>have more chance to initiate another topic</rdfs:comment>
+    </owl:Class>
+    
+
+
     <!-- http://www.co-ode.org/ontologies/ont.owl#Disagree -->
 
     <owl:Class rdf:about="&ont;Disagree">
@@ -361,6 +387,15 @@
 
     <owl:Class rdf:about="&ont;EndTheSession">
         <rdfs:subClassOf rdf:resource="&ont;MicroSequence"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#EvasiveCharactor -->
+
+    <owl:Class rdf:about="&ont;EvasiveCharactor">
+        <rdfs:subClassOf rdf:resource="&ont;PatientCharactor"/>
+        <rdfs:comment>have more chance to say notClear phrases</rdfs:comment>
     </owl:Class>
     
 
@@ -545,6 +580,15 @@
 
     <owl:Class rdf:about="&ont;Goodbye">
         <rdfs:subClassOf rdf:resource="&ont;MicroSequence"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#InformativeCharactor -->
+
+    <owl:Class rdf:about="&ont;InformativeCharactor">
+        <rdfs:subClassOf rdf:resource="&ont;PatientCharactor"/>
+        <rdfs:comment>have more chance to ask questions for information</rdfs:comment>
     </owl:Class>
     
 
@@ -765,23 +809,6 @@
     
 
 
-    <!-- http://www.co-ode.org/ontologies/ont.owl#agressiveCharactor -->
-
-    <owl:Class rdf:about="&ont;agressiveCharactor">
-        <rdfs:subClassOf rdf:resource="&ont;PatientCharactor"/>
-        <rdfs:comment>more chance to say impolite and agressive phrases</rdfs:comment>
-    </owl:Class>
-    
-
-
-    <!-- http://www.co-ode.org/ontologies/ont.owl#childCharactor -->
-
-    <owl:Class rdf:about="&ont;childCharactor">
-        <rdfs:subClassOf rdf:resource="&ont;PatientCharactor"/>
-    </owl:Class>
-    
-
-
     <!-- http://www.co-ode.org/ontologies/ont.owl#clear -->
 
     <owl:Class rdf:about="&ont;clear">
@@ -791,38 +818,11 @@
     
 
 
-    <!-- http://www.co-ode.org/ontologies/ont.owl#digressiveCharactor -->
-
-    <owl:Class rdf:about="&ont;digressiveCharactor">
-        <rdfs:subClassOf rdf:resource="&ont;PatientCharactor"/>
-        <rdfs:comment>have more chance to initiate another topic</rdfs:comment>
-    </owl:Class>
-    
-
-
     <!-- http://www.co-ode.org/ontologies/ont.owl#empathetic -->
 
     <owl:Class rdf:about="&ont;empathetic">
         <rdfs:subClassOf rdf:resource="&ont;PhraseCommunicationCategory"/>
         <rdfs:comment>positive</rdfs:comment>
-    </owl:Class>
-    
-
-
-    <!-- http://www.co-ode.org/ontologies/ont.owl#evasiveCharactor -->
-
-    <owl:Class rdf:about="&ont;evasiveCharactor">
-        <rdfs:subClassOf rdf:resource="&ont;PatientCharactor"/>
-        <rdfs:comment>have more chance to say notClear phrases</rdfs:comment>
-    </owl:Class>
-    
-
-
-    <!-- http://www.co-ode.org/ontologies/ont.owl#informativeCharactor -->
-
-    <owl:Class rdf:about="&ont;informativeCharactor">
-        <rdfs:subClassOf rdf:resource="&ont;PatientCharactor"/>
-        <rdfs:comment>have more chance to ask questions for information</rdfs:comment>
     </owl:Class>
     
 
