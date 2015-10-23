@@ -1,12 +1,12 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="owlapi:ontology:ont1#"
      xml:base="owlapi:ontology:ont1"
-     xmlns:AgileDoctor="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:ont="http://www.co-ode.org/ontologies/ont.owl#"
-     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:AgileDoctor="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#">
     <owl:Ontology rdf:about="owlapi:ontology:ont1"/>
     
 
@@ -63,9 +63,9 @@
     
 
 
-    <!-- http://www.co-ode.org/ontologies/ont.owl#OWLDataProperty_8be60bbc_3fc9_4132_8f2e_cc29e44656fd -->
+    <!-- http://www.co-ode.org/ontologies/ont.owl#expression -->
 
-    <owl:DatatypeProperty rdf:about="http://www.co-ode.org/ontologies/ont.owl#OWLDataProperty_8be60bbc_3fc9_4132_8f2e_cc29e44656fd"/>
+    <owl:DatatypeProperty rdf:about="http://www.co-ode.org/ontologies/ont.owl#expression"/>
     
 
 
@@ -331,7 +331,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#Fatigue">
         <rdf:type rdf:resource="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#Symptom"/>
-        <ont:OWLDataProperty_8be60bbc_3fc9_4132_8f2e_cc29e44656fd rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Always feels tied.</ont:OWLDataProperty_8be60bbc_3fc9_4132_8f2e_cc29e44656fd>
+        <ont:expression rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Always feels tied.</ont:expression>
     </owl:NamedIndividual>
     
 
@@ -349,7 +349,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#Legache">
         <rdf:type rdf:resource="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#Symptom"/>
-        <ont:OWLDataProperty_8be60bbc_3fc9_4132_8f2e_cc29e44656fd rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Leg hurts when climb stepways</ont:OWLDataProperty_8be60bbc_3fc9_4132_8f2e_cc29e44656fd>
+        <ont:expression rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Leg hurts when climb stepways</ont:expression>
     </owl:NamedIndividual>
     
 
@@ -382,7 +382,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#dPh1">
         <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#TopPhrase"/>
-        <ont:OWLDataProperty_8be60bbc_3fc9_4132_8f2e_cc29e44656fd rdf:datatype="http://www.w3.org/2001/XMLSchema#string">And the smoking?</ont:OWLDataProperty_8be60bbc_3fc9_4132_8f2e_cc29e44656fd>
+        <ont:expression rdf:datatype="http://www.w3.org/2001/XMLSchema#string">And the smoking?</ont:expression>
         <AgileDoctor:clearLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">clear</AgileDoctor:clearLevel>
         <AgileDoctor:aggressiveLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">neutral</AgileDoctor:aggressiveLevel>
         <AgileDoctor:longLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">normal</AgileDoctor:longLevel>
@@ -396,7 +396,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#dPh2">
         <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#RefinePhrase"/>
-        <ont:OWLDataProperty_8be60bbc_3fc9_4132_8f2e_cc29e44656fd rdf:datatype="http://www.w3.org/2001/XMLSchema#string">How many? 1 pack a day? 2 pack a aday?</ont:OWLDataProperty_8be60bbc_3fc9_4132_8f2e_cc29e44656fd>
+        <ont:expression rdf:datatype="http://www.w3.org/2001/XMLSchema#string">How many? 1 pack a day? 2 pack a aday?</ont:expression>
         <ont:hasActor rdf:resource="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#Vidal"/>
         <AgileDoctor:belongToDS rdf:resource="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#query_smoking_normal"/>
     </owl:NamedIndividual>
@@ -407,7 +407,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#dph11">
         <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#TopPhrase"/>
-        <ont:OWLDataProperty_8be60bbc_3fc9_4132_8f2e_cc29e44656fd rdf:datatype="http://www.w3.org/2001/XMLSchema#string">So what else do you have?</ont:OWLDataProperty_8be60bbc_3fc9_4132_8f2e_cc29e44656fd>
+        <ont:expression rdf:datatype="http://www.w3.org/2001/XMLSchema#string">So what else do you have?</ont:expression>
         <ont:hasActor rdf:resource="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#Vidal"/>
         <AgileDoctor:belongToDS rdf:resource="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#query_symptom_fatigue"/>
     </owl:NamedIndividual>
@@ -418,7 +418,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#pPh1">
         <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#TopPhrase"/>
-        <ont:OWLDataProperty_8be60bbc_3fc9_4132_8f2e_cc29e44656fd rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oh, not much</ont:OWLDataProperty_8be60bbc_3fc9_4132_8f2e_cc29e44656fd>
+        <ont:expression rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oh, not much</ont:expression>
         <AgileDoctor:clearLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">unclear</AgileDoctor:clearLevel>
         <ont:hasActor rdf:resource="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#Toto"/>
         <AgileDoctor:belongToDS rdf:resource="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#query_smoking_normal"/>
@@ -430,7 +430,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#pPh11">
         <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#TopPhrase"/>
-        <ont:OWLDataProperty_8be60bbc_3fc9_4132_8f2e_cc29e44656fd rdf:datatype="http://www.w3.org/2001/XMLSchema#string">I have nothing to say.</ont:OWLDataProperty_8be60bbc_3fc9_4132_8f2e_cc29e44656fd>
+        <ont:expression rdf:datatype="http://www.w3.org/2001/XMLSchema#string">I have nothing to say.</ont:expression>
         <ont:hasActor rdf:resource="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#Toto"/>
         <AgileDoctor:belongToDS rdf:resource="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#query_symptom_fatigue"/>
     </owl:NamedIndividual>
@@ -443,7 +443,7 @@
         <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#RefinePhrase"/>
         <AgileDoctor:clearLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">clear</AgileDoctor:clearLevel>
         <AgileDoctor:dsStatus rdf:datatype="http://www.w3.org/2001/XMLSchema#string">normal</AgileDoctor:dsStatus>
-        <ont:OWLDataProperty_8be60bbc_3fc9_4132_8f2e_cc29e44656fd rdf:datatype="http://www.w3.org/2001/XMLSchema#string">well, I don&apos;t know, maybe 3 packs a day.</ont:OWLDataProperty_8be60bbc_3fc9_4132_8f2e_cc29e44656fd>
+        <ont:expression rdf:datatype="http://www.w3.org/2001/XMLSchema#string">well, I don&apos;t know, maybe 3 packs a day.</ont:expression>
         <ont:hasActor rdf:resource="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#Toto"/>
         <AgileDoctor:belongToDS rdf:resource="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#query_smoking_normal"/>
         <AgileDoctor:includeInfo rdf:resource="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#smokingInfo1"/>
@@ -493,7 +493,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#smokingInfo1">
         <rdf:type rdf:resource="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#Smoking"/>
-        <ont:OWLDataProperty_8be60bbc_3fc9_4132_8f2e_cc29e44656fd rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Heavy smoker, 3 packs per day</ont:OWLDataProperty_8be60bbc_3fc9_4132_8f2e_cc29e44656fd>
+        <ont:expression rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Heavy smoker, 3 packs per day</ont:expression>
     </owl:NamedIndividual>
     
 

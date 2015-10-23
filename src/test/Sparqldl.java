@@ -37,7 +37,7 @@ public class Sparqldl implements ITestCase {
 		// Create the manager
 		manager = OWLManager.createOWLOntologyManager();
 		// File with an existing ontology - make sure it's there!
-		fClass = new File("model/mcs_ontology.owl");
+		fClass = new File("model/GameDialogueModeltest.owl");
 		// Load the ontology from the file
 		try {
 			ontology = manager.loadOntologyFromOntologyDocument(fClass);
@@ -56,23 +56,32 @@ public class Sparqldl implements ITestCase {
 
 	@Override
 	public boolean test() {
-		Query query1 = null, query2 = null, query3 = null, query4 = null;
+		Query query1 = null, query2 = null, query3 = null, query4 = null, query5= null;
 		QueryResult result = null;
 		try {
 			// select indivuduals of a class.
 			query1 = Query.create("SELECT ?x WHERE { Type(?x, <http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#Child>) }");
-			// using prefix, there must be a space after the :, holy shit
+			// using prefix, there must be a space after the : 
 			query2 = Query.create("PREFIX ad: <http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#> "
 					+ " SELECT ?x WHERE { Type(?x, ad:Child) }");
 			// get all classes.
 			query3 = Query.create(" SELECT ?c WHERE { Class(?c) }");
 			// get all individuals.
 			query4 = Query.create(" SELECT ?i WHERE { Individual(?i) }");
+			//
+		/*	query5 = Query.create("PREFIX agl: <http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#>"+
+					" PREFIX ont: <http://www.co-ode.org/ontologies/ont.owl#>"+
+					 " SELECT ?ms  WHERE { Type(?ms, ont:TopPhrase) }");
+*/
+							
+					
+		
 		} catch (QueryParserException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		try {
+			
 			result = sparqldl.execute(query1);
 			System.out.println(result.toJSON());
 			result = sparqldl.execute(query2);
@@ -81,6 +90,8 @@ public class Sparqldl implements ITestCase {
 			System.out.println(result.toJSON());
 			result = sparqldl.execute(query4);
 			System.out.println(result.toJSON());
+			//result = sparqldl.execute(query5);
+			//System.out.println(result.toJSON());
 			
 		} catch (QueryEngineException e) {
 			// TODO Auto-generated catch block

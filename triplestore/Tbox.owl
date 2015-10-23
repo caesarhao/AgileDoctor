@@ -1,10 +1,10 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="owlapi:ontology:ont0#"
      xml:base="owlapi:ontology:ont0"
-     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
     <owl:Ontology rdf:about="owlapi:ontology:ont0"/>
     
 
@@ -29,9 +29,9 @@
     
 
 
-    <!-- http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#accomanyAction -->
+    <!-- http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#accompanyAction -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#accomanyAction">
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#accompanyAction">
         <rdfs:domain rdf:resource="http://www.co-ode.org/ontologies/ont.owl#DialogueSession"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/serene/ontologies/2015/IRIT/Project/AgileDoctor#Action"/>
     </owl:ObjectProperty>
@@ -96,9 +96,9 @@
     
 
 
-    <!-- http://www.co-ode.org/ontologies/ont.owl#OWLDataProperty_8be60bbc_3fc9_4132_8f2e_cc29e44656fd -->
+    <!-- http://www.co-ode.org/ontologies/ont.owl#expression -->
 
-    <owl:DatatypeProperty rdf:about="http://www.co-ode.org/ontologies/ont.owl#OWLDataProperty_8be60bbc_3fc9_4132_8f2e_cc29e44656fd">
+    <owl:DatatypeProperty rdf:about="http://www.co-ode.org/ontologies/ont.owl#expression">
         <rdfs:domain rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Phrase"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
