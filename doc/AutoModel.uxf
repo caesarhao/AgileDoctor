@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.1.1">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>10</x>
+      <y>10</y>
+      <w>360</w>
+      <h>160</h>
+    </coordinates>
+    <panel_attributes>/model::APatientInformation/
+--
++importance: int
++priority: int
++acquiringMethod: AcquiringMethod
++possibleAskPhrases: Set&lt;DoctorPhrase&gt;
++possibleResponsePhrases: Set&lt;PatientPhrase&gt;
++superInformation: APatientInformation
+--
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>380</x>
+      <y>10</y>
+      <w>170</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>model::PatientActor
+--
++aggressiveLevel: int
++longPhraseLevel: int
++clearLevel: int
++confidentLevel: int
+--
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>560</x>
+      <y>10</y>
+      <w>230</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>/model::APhrase/
+--
++expression: String
++primitiveType: PrimitiveType
++phraseActor: APhraseActor
+--
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>10</x>
+      <y>180</y>
+      <w>260</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>model::PatientPhrase
+--
++aggressiveLevel: AggressiveLevel
++clearLevel: ClearLevel
++longLevel: LongLevel
+--
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>280</x>
+      <y>180</y>
+      <w>220</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>model::DialogueSession
+--
++doctorPhrase: DoctorPhrase
++patientPhrase: PatientPhrase
+--
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>510</x>
+      <y>180</y>
+      <w>230</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>model::DoctorPhrase
+--
++effTrust = 0.0: double
++effDisturbance = 0.0: double
+--
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>10</x>
+      <y>300</y>
+      <w>170</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>/model::APhraseActor/
+--
++sex: boolean
+--
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>190</x>
+      <y>300</y>
+      <w>120</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>/model::AThing/
+--
++name: String
+--
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>420</x>
+      <y>310</y>
+      <w>320</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>model::MicroSequence
+--
++dialogueSessions: Set&lt;DialogueSession&gt;
+--
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>100</x>
+      <y>420</y>
+      <w>300</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>model::Scenario
+--
++microSequences: Set&lt;MicroSequence&gt;
+--
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>10</x>
+      <y>520</y>
+      <w>160</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>/model::AInformation/
+--
+--
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>250</x>
+      <y>520</y>
+      <w>150</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>model::DoctorActor
+--
+--
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>450</x>
+      <y>520</y>
+      <w>200</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>model::FamilyInformation
+--
+--
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>680</x>
+      <y>510</y>
+      <w>200</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>model::MedicalInformation
+--
+--
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>240</x>
+      <y>360</y>
+      <w>30</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;60.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>270</x>
+      <y>300</y>
+      <w>200</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;70.0;180.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>390</x>
+      <y>370</y>
+      <w>170</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-&gt;&gt;&gt;&gt;
+m1=0..n
+r1=microSequences</panel_attributes>
+    <additional_attributes>40.0;10.0;10.0;80.0</additional_attributes>
+  </element>
+</diagram>

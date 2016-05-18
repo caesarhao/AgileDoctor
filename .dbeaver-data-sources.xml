@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data-sources>
+	<data-source id="sqlite_jdbc-1509fcae505-2b3b6d381461da34" provider="generic" driver="sqlite_jdbc" name="SQLite - dbs" create-date="1445790010176" update-date="1445790406218" save-password="true" show-system-objects="true" read-only="false">
+		<connection server="" database="/home/caesarhao/workspace/AgileDoctorDB/dbs.db" url="jdbc:sqlite:/home/caesarhao/workspace/AgileDoctorDB/dbs.db" user="" type="dev">
+			<bootstrap/>
+		</connection>
+	</data-source>
+</data-sources>

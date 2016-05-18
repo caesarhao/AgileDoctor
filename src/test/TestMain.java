@@ -10,9 +10,9 @@ public class TestMain {
 		// prepare test cases.
 		//testcases.add(new IndividualCrudInRam());
 		//testcases.add(new UseReasoner());
-		//testcases.add(new DLQueriesWithHermiT());
+		testcases.add(new DLQueriesWithHermiT());
 		//testcases.add(new Sparqldl());
-		testcases.add(new TestTripleStore());
+		//testcases.add(new TestTripleStore());
 		// launch test cases.
 		for(ITestCase i: testcases){
 			System.out.println("==Test case: " + i.getClass().getName());

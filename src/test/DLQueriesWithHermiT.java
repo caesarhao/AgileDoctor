@@ -30,6 +30,9 @@ import org.semanticweb.owlapi.util.BidirectionalShortFormProviderAdapter;
 import org.semanticweb.owlapi.util.ShortFormProvider;
 import org.semanticweb.owlapi.util.SimpleShortFormProvider;
 
+// It doesn't work
+// Try 
+// Adolescent AND Child
 public class DLQueriesWithHermiT implements ITestCase {
 	@Override
 	public boolean prepare() {
@@ -182,7 +185,7 @@ class DLQueryPrinter {
 		} else {
 			try {
 				StringBuilder sb = new StringBuilder();
-				sb.append("\\nQUERY:   ").append(classExpression).append("\\n\\n");
+				sb.append("\nQUERY:   ").append(classExpression).append("\n\n");
 				Set<OWLClass> superClasses = dlQueryEngine.getSuperClasses(classExpression, false);
 				printEntities("SuperClasses", superClasses, sb);
 				Set<OWLClass> equivalentClasses = dlQueryEngine.getEquivalentClasses(classExpression);
@@ -204,14 +207,14 @@ class DLQueryPrinter {
 		for (int i = 0; i < length; i++) {
 			sb.append(".");
 		}
-		sb.append("\\n\\n");
+		sb.append("\n\n");
 		if (!entities.isEmpty()) {
 			for (OWLEntity entity : entities) {
-				sb.append("\\t").append(shortFormProvider.getShortForm(entity)).append("\\n");
+				sb.append("\t").append(shortFormProvider.getShortForm(entity)).append("\n");
 			}
 		} else {
-			sb.append("\\t[NONE]\\n");
+			sb.append("\t[NONE]\n");
 		}
-		sb.append("\\n");
+		sb.append("\n");
 	}
 }
