@@ -30,7 +30,6 @@ import org.semanticweb.owlapi.util.BidirectionalShortFormProviderAdapter;
 import org.semanticweb.owlapi.util.ShortFormProvider;
 import org.semanticweb.owlapi.util.SimpleShortFormProvider;
 
-// It doesn't work
 // Try 
 // Adolescent AND Child
 public class DLQueriesWithHermiT implements ITestCase {
